@@ -1,0 +1,96 @@
+{
+  "title": "Mars Trek — couches sélectionnées découpées sur la région de Gale",
+  "source": "NASA Mars Trek WMTS",
+  "source_docs": "https://trek.nasa.gov/tiles/apidoc/trekAPI.html?body=mars",
+  "crs": "EPSG:104905",
+  "bbox": {
+    "west": 133.294245933863,
+    "south": -9.346237321415312,
+    "east": 141.5449782018324,
+    "north": -2.369919092173532
+  },
+  "bbox_order": "west, south, east, north",
+  "mars_trek_view_center": {
+    "longitude": 137.4196120678477,
+    "latitude": -5.858078206794422
+  },
+  "layers": [
+    {
+      "id": "Mars_MOLA_blend200ppx_HRSC_ClrShade_clon0dd_200mpp_lzw",
+      "label": "MGS MOLA + Mars Express HRSC — color hillshade blend",
+      "selected": true,
+      "opacity": 1.0,
+      "gale_extract": true,
+      "notes": "Fond topographique global"
+    },
+    {
+      "id": "Mars_MGS_MOLA_ClrShade_merge_global_463m",
+      "label": "MGS MOLA — global color hillshade",
+      "selected": true,
+      "opacity": 1.0,
+      "gale_extract": true,
+      "notes": "Relief global"
+    },
+    {
+      "id": "TES_Dust",
+      "label": "MGS TES — dust",
+      "selected": true,
+      "opacity": 0.0,
+      "gale_extract": true,
+      "notes": "Couche sélectionnée, opacité 0 %"
+    },
+    {
+      "id": "Mars_MGS_TES_Albedo_mosaic_global_7410m",
+      "label": "MGS TES — surface albedo",
+      "selected": true,
+      "opacity": 0.0,
+      "gale_extract": true,
+      "notes": "Couche sélectionnée, opacité 0 %"
+    },
+    {
+      "id": "THEMIS_NightIR_ControlledMosaics_100m_v2_oct2018",
+      "label": "THEMIS IR — night mosaic (100 m)",
+      "selected": true,
+      "opacity": 1.0,
+      "gale_extract": true,
+      "notes": "Mosaïque infrarouge nocturne"
+    },
+    {
+      "id": "Gale_CTX_BlockAdj_dd",
+      "label": "MRO CTX — Gale Crater mosaic",
+      "selected": true,
+      "opacity": 1.0,
+      "gale_extract": true,
+      "notes": "Mosaïque CTX de Gale"
+    },
+    {
+      "id": "THEMIS_DayIR_ControlledMosaics_100m_v2_oct2018",
+      "label": "THEMIS IR — day mosaic (100 m)",
+      "selected": true,
+      "opacity": 1.0,
+      "gale_extract": true,
+      "notes": "Mosaïque infrarouge diurne"
+    },
+    {
+      "id": "Ausonia_CTX_BlockAdj_dd",
+      "label": "MRO CTX — Ausonia mosaic",
+      "selected": true,
+      "opacity": 1.0,
+      "gale_extract": false,
+      "notes": "Hors de l'emprise Gale"
+    },
+    {
+      "id": "olympus_mons.eq",
+      "label": "MRO CTX — Olympus Mons mosaic",
+      "selected": true,
+      "opacity": 1.0,
+      "gale_extract": false,
+      "notes": "Hors de l'emprise Gale"
+    }
+  ],
+  "notes": [
+    "L'opacité d'origine est conservée dans les métadonnées et ne modifie pas les valeurs raster.",
+    "Les couches TES restent incluses même avec une opacité initiale de 0 %.",
+    "Ausonia et Olympus Mons ne recoupent pas Gale et sont exclues des téléchargements."
+  ]
+}
